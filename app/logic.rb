@@ -1,10 +1,10 @@
 def avoid_walls(possible_moves, board)
   head = board[:you][:head]
 
-  possible_moves.delete('left') if my_head[:x] == 0
-  possible_moves.delete('down') if my_head[:y] == 0
-  possible_moves.delete('right') if my_head[:x] == max_x(board)
-  possible_moves.delete('up') if my_head[:y] == max_y(board)
+  possible_moves.delete('left') if head[:x] == 0
+  possible_moves.delete('down') if head[:y] == 0
+  possible_moves.delete('right') if head[:x] == max_x(board)
+  possible_moves.delete('up') if head[:y] == max_y(board)
 
   return possible_moves
 end
