@@ -6,7 +6,7 @@ def avoid_walls(possible_moves, board)
   possible_moves.delete('right') if my_head[:x] == max_x(board)
   possible_moves.delete('up') if my_head[:y] == max_y(board)
 
-  possible_moves
+  return possible_moves
 end
 
 def max_x(board)
